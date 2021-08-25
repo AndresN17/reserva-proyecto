@@ -1,5 +1,6 @@
 import {
   IsNotEmpty,
+  IsOptional,
   IsString,
   Matches,
   MaxLength,
@@ -21,6 +22,6 @@ export class AuthCredentiaslDTO {
   })
   password: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   type: UserType;
 }
